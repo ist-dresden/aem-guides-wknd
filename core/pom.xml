@@ -81,10 +81,21 @@ Import-Package: javax.annotation;version=0.0.0,*
 
     <dependencies>
         <!-- Core Component Dependency -->
-        <dependency>
+        <!-- FIXME replace by Composum dependencies -->
+        <!-- <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>
+        </dependency> -->
+
+        <dependency>
+            <groupId>com.composum.prototype.aemwcmcorereplacement</groupId>
+            <artifactId>composum-prototype-aemwcmcorereplacement-app-bundle</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.annotation</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
@@ -138,6 +149,7 @@ Import-Package: javax.annotation;version=0.0.0,*
 
       <!-- Additional Profiles for Cloud Service vs. 6.x -->
     <profiles>
+        <!--
         <profile>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -149,7 +161,7 @@ Import-Package: javax.annotation;version=0.0.0,*
                     <artifactId>aem-sdk-api</artifactId>
                 </dependency>
             </dependencies>
-        </profile>
+        </profile> -->
         <profile>
             <id>classic</id>
 
@@ -184,6 +196,7 @@ Import-Package: javax.annotation;version=0.0.0,*
                 AEM 6.x Dependencies 
                 ====================-->
                 <!-- Adobe AEM Dependencies -->
+                <!-- FIXME replace by Composum dependencies
                 <dependency>
                     <groupId>com.adobe.aem</groupId>
                     <artifactId>uber-jar</artifactId>
@@ -191,6 +204,7 @@ Import-Package: javax.annotation;version=0.0.0,*
                     <classifier>apis</classifier>
                     <scope>provided</scope>
                 </dependency>
+                -->
                 <!-- OSGi Dependencies -->
                 <dependency>
                     <groupId>org.osgi</groupId>
@@ -312,12 +326,14 @@ Import-Package: javax.annotation;version=0.0.0,*
                     <scope>provided</scope>
                 </dependency>
                 <!-- Taglibs -->
+                <!-- FIXME replace by Composum dependencies
                 <dependency>
                     <groupId>com.day.cq.wcm</groupId>
                     <artifactId>cq-wcm-taglib</artifactId>
                     <version>5.7.4</version>
                     <scope>provided</scope>
                 </dependency>
+                -->
             </dependencies>
         </profile>
     </profiles>

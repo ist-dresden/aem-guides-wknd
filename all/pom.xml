@@ -225,6 +225,7 @@
                                     <type>zip</type>
                                     <target>/apps/wknd-packages/content/install</target>
                                 </embedded>
+                                <!-- FIXME replace by Composum dependencies
                                 <embedded>
                                     <groupId>com.adobe.cq</groupId>
                                     <artifactId>core.wcm.components.content</artifactId>
@@ -242,6 +243,7 @@
                                     <artifactId>core.wcm.components.core</artifactId>
                                     <target>/apps/wknd-vendor-packages/application/install</target>
                                 </embedded>
+                                -->
                             </embeddeds>
                         </configuration>
                     </plugin>
@@ -313,6 +315,7 @@
             <type>zip</type>
         </dependency>
          <!-- Core Component Dependency (6.x only)-->
+        <!-- FIXME replace by Composum dependencies
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.content</artifactId>
@@ -327,5 +330,6 @@
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>                
         </dependency>
+        -->
     </dependencies>
 </project>
