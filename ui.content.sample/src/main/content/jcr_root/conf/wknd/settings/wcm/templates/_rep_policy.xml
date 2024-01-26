@@ -5,6 +5,7 @@
         jcr:primaryType="rep:GrantACE"
         rep:principalName="everyone"
         rep:privileges="{Name}[jcr:read]"/>
+    <!-- FIXME this is currently just removed because it's incompatible to Composum, but not replaced.
     <allow1
         jcr:primaryType="rep:GrantACE"
         rep:principalName="content-authors"
@@ -17,4 +18,5 @@
         jcr:primaryType="rep:GrantACE"
         rep:principalName="version-manager-service"
         rep:privileges="{Name}[jcr:versionManagement,rep:write]"/>
+        -->
 </jcr:root>
