@@ -248,6 +248,40 @@
             </plugins>
             </build>
          </profile>
+        <profile>
+            <id>installPackage</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <package.install>/bin/cpm/package.service.html</package.install>
+            </properties>
+            <build>
+              <plugins>
+                <plugin>
+                  <groupId>com.day.jcr.vault</groupId>
+                  <artifactId>content-package-maven-plugin</artifactId>
+                    <configuration>
+                        <failOnError>true</failOnError>
+                        <targetURL>${sling.scheme}://${sling.host}:${sling.port}${sling.context}${package.install}
+                        </targetURL>
+                        <userId>${sling.user}</userId>
+                        <password>${sling.password}</password>
+                        <useProxy>false</useProxy>
+                    </configuration>
+                  <executions>
+                    <execution>
+                      <id>install-content-package</id>
+                      <phase>install</phase>
+                      <goals>
+                        <goal>install</goal>
+                      </goals>
+                    </execution>
+                  </executions>
+                </plugin>
+              </plugins>
+            </build>
+        </profile>
     </profiles>
 
     <!-- ====================================================================== -->
