@@ -4,7 +4,7 @@ import org.apache.sling.api.resource.Resource;
 
 import java.util.Collection;
 
-import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
+// CPMREMOVE import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
@@ -26,10 +26,10 @@ public interface ImageList {
      * 
      * @return JSON data to populate the data layer
      */
-    @JsonProperty("dataLayer")
+    /* CPMREMOVE @JsonProperty("dataLayer")
     default ComponentData getData() {
         return null;
-    }
+    } */
 
     /**
      * 
@@ -64,10 +64,10 @@ public interface ImageList {
          */
         String getURL();
 
-        @JsonProperty("dataLayer")
+        /* CPMREMOVE @JsonProperty("dataLayer")
         default ComponentData getData() {
             return null;
-        }
+        } */
 
         /**
          * 
