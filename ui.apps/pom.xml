@@ -122,7 +122,7 @@
             <type>zip</type>
         </dependency>
 
-        <!-- FIXME replace by Composum dependencies
+        <!-- CPMREMOVE FIXME replace by Composum dependencies
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>

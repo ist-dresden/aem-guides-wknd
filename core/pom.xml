@@ -80,12 +80,10 @@ Import-Package: javax.annotation;version=0.0.0,*
     </build>
 
     <dependencies>
-        <!-- Core Component Dependency -->
-        <!-- FIXME replace by Composum dependencies -->
-        <!-- <dependency>
+        <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.core</artifactId>
-        </dependency> -->
+        </dependency>
 
         <dependency>
             <groupId>com.composum.prototype.aemwcmcorereplacement</groupId>
@@ -215,7 +213,7 @@ Import-Package: javax.annotation;version=0.0.0,*
                 AEM 6.x Dependencies 
                 ====================-->
                 <!-- Adobe AEM Dependencies -->
-                <!-- FIXME replace by Composum dependencies
+                <!-- CPMREMOVE FIXME replace by Composum dependencies
                 <dependency>
                     <groupId>com.adobe.aem</groupId>
                     <artifactId>uber-jar</artifactId>
@@ -351,7 +349,7 @@ Import-Package: javax.annotation;version=0.0.0,*
                     <scope>provided</scope>
                 </dependency>
                 <!-- Taglibs -->
-                <!-- FIXME replace by Composum dependencies
+                <!-- CPMREMOVE FIXME replace by Composum dependencies
                 <dependency>
                     <groupId>com.day.cq.wcm</groupId>
                     <artifactId>cq-wcm-taglib</artifactId>

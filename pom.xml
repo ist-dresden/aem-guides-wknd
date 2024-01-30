@@ -727,7 +727,7 @@ Bundle-DocURL:
             </dependency>
 
             <!-- AEM as a Cloud Service SDK -->
-            <!-- FIXME replace with Composum dependencies
+            <!-- CPMREMOVE FIXME replace with Composum dependencies
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>aem-sdk-api</artifactId>
@@ -736,8 +736,7 @@ Bundle-DocURL:
             </dependency>
             -->
 
-             <!-- AEM Core Components -->
-            <!-- FIXME replace with Composum dependencies
+            <!-- AEM Core Components -->
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.wcm.components.core</artifactId>
@@ -756,7 +755,6 @@ Bundle-DocURL:
                 <type>zip</type>
                 <version>${core.wcm.components.version}</version>
             </dependency>
-            -->
 
             <!-- Testing -->
             <dependency>
